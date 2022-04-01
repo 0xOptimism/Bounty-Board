@@ -13,7 +13,7 @@ const main = async () => {
     "contracts/CloneFactory.sol:CloneFactory"
   );
   const cloneFactoryContract = await cloneContractFactory.deploy(
-    "0xdd2fd4581271e230360230f9337d5c0430bf44c0"
+    bountyContract.address
   );
 
   await cloneFactoryContract.deployed();
